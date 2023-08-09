@@ -1,11 +1,89 @@
+<!-- Task is to take input (Any fields) using html and just print in alert message (input data print it) using javascript -->
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eligibility for Voting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #75dc61;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #4c6baf;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #454ca0;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="container">
+        <form id="votingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="region">Region:</label>
+            <input type="text" id="region" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+            <button type="button" onclick="showAlert()">Check Eligibility</button>
+        </form>
+    </div>
+    <script>
+        function showAlert() {
+            const name = document.getElementById('name').value;
+            const region = document.getElementById('region').value;
+            const dob = document.getElementById('dob').value;
+
+            if (isEligible(dob)) {
+                const message = `Congratulations, ${name} from ${region}! You are eligible to vote.`;
+                alert(message);
+            } else {
+                alert(`Sorry, ${name} from ${region}. You are not eligible to vote yet.`);
+            }
+        }
+
+        function isEligible(dob) {
+            const currentDate = new Date();
+            const birthDate = new Date(dob);
+            const ageInMilliseconds = currentDate - birthDate;
+            const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+            return ageInYears >= 18;
+        }
+    </script>
 </body>
+
 </html>
