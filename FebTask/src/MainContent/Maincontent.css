@@ -1,0 +1,43 @@
+/* MainContent.css */
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 42px;
+    background-color: #b11313;
+ }
+  
+  .ant-card {
+    margin: 0 16px 16px 0;
+    width: calc(50% - 16px);
+    background-color: black;
+    padding: 30px; /* Set background color of card body to black */
+  }
+  
+  .ant-card-body {
+background-color: #df1f2d;
+height: 30px;
+
+     /* Set background color of card header to red */
+  }
+  
+  .ant-card-head-title {
+    color: black;
+    text-align: center !important;
+     /* Set title color to white */
+  }
+  .ant-card-head{
+    background-color: white !important;
+   
+  }
+  
+  .ant-card:nth-child(n+3) {
+    width: calc(33.33% - 16px);
+  }
+ 
+  .avatar-container {
+    position: absolute;
+    top: 85px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+  }  

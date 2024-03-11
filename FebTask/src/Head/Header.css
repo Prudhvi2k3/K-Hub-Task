@@ -1,0 +1,44 @@
+/* Add padding-top equal to the height of the header */
+body {
+    padding-top: 80px; /* Adjust this value to match the height of your header */
+  }
+  
+  .navbar {
+    background-color: rgb(15, 17, 21); /* Green background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100; /* Ensure the Navbar is above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    display: flex; /* Change to flex to use justify-content */
+    justify-content: space-between;
+  }
+  
+  .navbar a {
+    color: #ffffff; /* White link color */
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo-image {
+    max-width: 120%; /* Make the image responsive */
+    height: 60px; /* Maintain aspect ratio */
+    position: static; /* Change to relative */
+    padding-right: 145px;
+    padding-bottom: -50px;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    margin-right: 100px; /* Add some margin for separation */
+    /* margin-top: 0px; */
+    margin-left: 20px;
+  }
+  

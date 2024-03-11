@@ -1,0 +1,48 @@
+.footer {
+    background-color:  rgb(116,130,184);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .company-name {
+    font-size: 31px;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  
+  .copyright {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  .social-link {
+    margin-right: 15px; /* Adjust spacing between social icons */
+  }
+  
+  .social-logo {
+    width: 30px; /* Adjust the width as needed */
+    height: auto;
+  }
+
+  .mail-logo{
+    height: auto;
+    width: 38px;
+    margin-bottom: -4px;
+  }
+  .insta-logo{
+    height: auto;
+    width: 38px;
+    margin-bottom: -4px;
+  }
+  .twitter-logo{
+    height: auto;
+    width: 42px;
+    margin-bottom: -7px;
+  }

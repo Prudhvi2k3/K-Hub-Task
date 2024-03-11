@@ -1,0 +1,28 @@
+.search-bar {
+  display: flex;
+  background-color: #ffffff; /* White background color */
+  border-radius: 20px; /* Rounded corners */
+  padding: 8px 12px;
+  margin: 5px 10px 10px auto; /* Center the SearchBar horizontally and move it down slightly */
+  width: 150px; /* Adjust the width as needed */
+}
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  /* Remove the button styles to hide the search button */
+  .search-bar button {
+    display: none;
+  }
+  
+  /* Add focus styles to the input when it's active */
+  .search-bar input:focus {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-flex{
+  justify-content: space-between !important;
+}
+
+.ant-tabs-nav-wrap{
+  font-palette: white !important;
+}
+
+/* MainContent.css */
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  background-color: #b11313;
+}
+
+.ant-card {
+  margin: 0 16px 16px 0;
+  width: calc(50% - 16px);
+  background-color: black;
+  padding: 30px; /* Set background color of card body to black */
+}
+
+.ant-card-body {
+background-color: #df1f2d;
+height: 30px;
+
+   /* Set background color of card header to red */
+}
+
+.ant-card-head-title {
+  color: black;
+  text-align: center !important;
+   /* Set title color to white */
+}
+.ant-card-head{
+  background-color: white !important;
+ 
+}
+
+.ant-card:nth-child(n+3) {
+  width: calc(33.33% - 16px);
+}

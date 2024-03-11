@@ -1,0 +1,64 @@
+.mission-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+    padding: 2em;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-bottom: 45px;
+    font-size: 20px;
+  }
+  
+  .mission-text {
+    margin-bottom: 2em; /* Add space between text and image */
+  }
+  
+  .mission-image img {
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    margin-left: -15px;
+    background: linear-gradient(to bottom, #d3f0ea, #a9d8dd, #87bed4, #74a1ca, #7482b8);
+  }
+  
+  /* Adjust layout for medium-sized screens */
+  @media (min-width: 600px) {
+    .mission-container {
+      flex-direction: row; /* Display items side by side on medium screens and above */
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .mission-text {
+      flex: 1;
+      margin-right: 2em;
+      margin-bottom: 0; /* Remove margin bottom for text on the side */
+    }
+  
+    .mission-image {
+      flex: 1;
+    }
+  }
+  
+  /* Increase font size based on screen width */
+  @media (min-width: 600px) {
+    .mission-text h2 {
+      font-size: 1.5em;
+    }
+  
+    .mission-text p {
+      font-size: 1em;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .mission-text h2 {
+      font-size: 2em;
+    }
+  
+    .mission-text p {
+      font-size: 1.2em;
+    }
+  }
+  

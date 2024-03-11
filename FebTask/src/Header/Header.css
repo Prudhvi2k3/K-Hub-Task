@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; /* Set the background color to black */
+  color: white; /* Set the text color to white for better visibility */
+  padding: 10px 20px; 
+  /* Add padding for spacing */
+}
+
+.title {
+  margin: 0; 
+  background-color: red;
+  color: black;/* Remove default margin */
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: -5px; /* Adjust this value to position the menu properly */
+  z-index: 1; 
+  /* Ensure the menu appears above other content */
+}
+
+
+
+.menu-links {
+  text-align: right; /* Align menu links to the right */
+}
+
+.menu-link {
+  margin-left: 20px; /* Add some space between menu links */
+  color: #ffffff; /* Adjust link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.menu-link:hover {
+  color: #555; /* Adjust link color on hover */
+}
