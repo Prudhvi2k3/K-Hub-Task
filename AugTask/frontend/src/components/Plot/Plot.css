@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack content vertically on small screens */
+  }
+.boxes {
+  flex-direction: column; /* Stack boxes vertically on small screens */
+  margin-left: 0; 
+  width: 60VW;
+  /* Remove left margin on small screens */
+}
+
+.box {
+  margin: 10px auto; /* Center boxes horizontally on small screens */
+  
+  
+
+   /* Adjust box width for small screens */
+}
+
+.info-box {
+  width: 100%; /* Adjust the width to fit smaller screens */
+  max-width: 100%; /* Limit the maximum width to ensure visibility */
+   /* Center and adjust margin on small screens */
+}
+
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+  justify-content: center;
+}
+
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0px ;
+  background-color: #BF6B6B;
+  border: 5px solid #ddd;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* Hide overflowing rotated pseudo-elements */
+}
+
+
+
+
+
+
+
+.h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1px;
+  margin-right: 550px;
+  font-weight: bold;
+}
+
+
+.info-box {
+  width: 100%;
+  max-width: 500px;
+
+  height: 450px;
+  margin-right: 50px;
+  margin-top: 12px;
+  background-color: #8593A6;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Add border radius to create curved edges */
+}
+
+.database-icon {
+  text-align: left;
+  color: white; 
+  margin-top: 15px;
+  margin-left: 15px;/* Set the icon color to white */
+}
+
+/* Style the "About the Data" heading */
+h2 {
+  text-align: left ;
+  
+  margin-top: -30px;
+  margin-left: 34px;
+  margin-right: 215px;
+}
+
+/* Define the background color class */
+.chart-color-a {
+  background-color: rgba(0, 0, 0, 0.4); /* A reddish color with transparency */
+}
+
+/* Define the border color class */
+.chart-color-border-a {
+  border-color: rgb(255, 225, 77); /* A solid reddish color */
+}
+
+/* Define additional colors as needed */
+.chart-label-color {
+  color:yellow; /* Replace with your de sired label color */
+}
