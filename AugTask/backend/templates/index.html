@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dataset Display</title>
+</head>
+<body>
+    <h1>Dataset Display</h1>
+    <table>
+        <tr>
+            <!-- Add table headers based on your dataset fields -->
+            <th>Field 1</th>
+            <th>Field 2</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <!-- Add table cells based on your dataset fields -->
+            <td>{{item.Total_cases}}</td>
+            <td>{{item.Total_deaths}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
